@@ -1,0 +1,89 @@
+article
+{
+    display: inline-block;
+    white-space: nowrap;
+    margin: 1em;
+    background-color: rgb(173, 178, 186);
+    min-width: 300px;
+    border-radius: 0.5em;
+    box-shadow: 0 0 10px rgb(87, 88, 91);
+    border: 1px solid black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+#display
+{
+    margin: 3em;
+}
+
+#display > img
+{
+    margin: 0 auto;
+}
+
+header
+{
+    font-size: 1.5em;
+}
+
+header, footer
+{
+    padding: 1em;
+    text-align: center;
+}
+
+form
+{
+    width: 20em;
+    padding: 0em 1em 0em 1em;
+}
+
+table
+{
+    table-layout: fixed;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+td
+{
+    widows: 50%;;
+}
+
+td > select
+{
+    width: 80%;
+}
+
+form > input, form > select
+{
+    width: auto;
+    margin-bottom: 1em;
+}
+
+footer
+{
+    margin-top: 1em;
+    padding : 0;
+}
+
+.ct, .autre, .text
+{
+    display: none;
+}
+
+label
+{
+    display: block;
+    margin-bottom: 0.4em;
+}
+
+footer > button
+{
+    width: 100%;
+    height: 3em;
+    border: 0;
+    border-radius: 0 0 0.5em 0.5em;
+    margin: 0em 0em 0em 0em;
+    padding: 0em 0em 0em 0em;
+}

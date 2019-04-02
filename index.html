@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>QR Code Generator</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/qrcode.min.js"></script>
+	<script type="text/javascript" src="js/qrcodeApplication.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+    <article>
+        <header>QR Code Generator</header>
+		<form method="POST" action="#">
+			<table>
+				<tr>
+					<td>
+						<label for="type">Type :</label>
+						<select name="type" id="type" onchange="selectChange()"> 
+							<option>Texte</option>
+							<option>URL</option>
+							<option>Contact</option>
+							<option>e-mail</option>
+							<option>Téléphone</option>
+							<option>SMS</option>
+						</select>
+					</td>
+					<td>
+						<label for="taille">Taille :</label>
+						<select name="taille" id="taille" onchange="assignQRCodeDiv('display')">
+							<option>100*100</option>
+							<option>200*200</option>
+							<option selected>300*300</option>
+							<option>500*500</option>
+							<option>1000*1000</option>
+						</select>
+					</td>
+				</tr>
+			</table>
+			
+			<label for="texte" class="text" id="valeur">Valeur :</label>
+			<input type="text" name="texte" id="texte" class="text">
+
+			<label for="destinataire" class="autre">Destinataire :</label>
+			<input type="text" name="destinataire" id="destinataire" class="autre">
+			
+			<label for="contenu" class="autre">Contenu :</label>
+			<input type="text" name="contenu" id="contenu" class="autre">
+
+			<label class="ct" for="ctNom">Nom :</label>
+			<input type="text" name="ctNom" id="ctNom"class="ct">
+
+			<label class="ct" for="ctPrenom">Prénom :</label>
+			<input type="text" name="ctPrenom" id="ctPrenom" class="ct">
+
+			<label class="ct" for="ctNumero">Numéro :</label>
+			<input type="text" name="ctNumero" id="ctNumero" class="ct">
+		</form>
+		<footer><button onclick="createQRCode()">Générer</button></footer>
+	</article><br>
+	
+    <article>
+		<header>Résultat</header>
+		<div id="display"></div>
+	</article> 
+	
+    <script type="text/javascript">
+		assignQRCodeDiv("display");
+		selectChange();
+    </script>
+</body>
+</html>
