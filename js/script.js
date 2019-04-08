@@ -1,5 +1,4 @@
-function selectChange()
-{
+function selectChange() {
     var select = document.getElementById("type").selectedIndex;
     var options = document.getElementById("type").options;
 
@@ -7,8 +6,7 @@ function selectChange()
 	
 	var type = options[select].text;
 
-    switch(type)
-    {
+    switch(type) {
         case 'Contact':
             setDisplay("ct", "block");
             break;
@@ -27,16 +25,15 @@ function selectChange()
     }
 }
 
-function setDisplay(classe, val)
-{
+function setDisplay(classe, val) {
     var tmp = document.getElementsByClassName(classe);
 
-    for (var i = 0; i < tmp.length; i++)
+    for (var i = 0; i < tmp.length; i++) {
         tmp[i].style.display = val;
+    }
 }
 
-function hideAll()
-{
+function hideAll() {
     setDisplay("text", "none");
     setDisplay("autre", "none");
     setDisplay("ct", "none");

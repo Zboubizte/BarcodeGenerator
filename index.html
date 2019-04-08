@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
 	<title>QR Code Generator</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/qrcode.min.js"></script>
-	<script type="text/javascript" src="js/qrcodeApplication.js"></script>
-	<script type="text/javascript" src="js/script.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/qrcode.min.js"></script>
+	<script src="js/qrcodeApplication.js"></script>
+	<script src="js/script.js"></script>
 </head>
 <body>
     <article>
-        <header>QR Code Generator</header>
+        <header><h2>QR Code Generator</h2></header>
 		<form method="POST" action="#">
 			<table>
 				<tr>
@@ -50,7 +49,7 @@
 			<input type="text" name="contenu" id="contenu" class="autre">
 
 			<label class="ct" for="ctNom">Nom :</label>
-			<input type="text" name="ctNom" id="ctNom"class="ct">
+			<input type="text" name="ctNom" id="ctNom" class="ct">
 
 			<label class="ct" for="ctPrenom">Prénom :</label>
 			<input type="text" name="ctPrenom" id="ctPrenom" class="ct">
@@ -62,13 +61,13 @@
 	</article><br>
 	
     <article>
-		<header>Résultat</header>
+		<header><h2>Résultat</h2></header>
 		<div id="display"></div>
 	</article> 
 	
-    <script type="text/javascript">
+	<script>
 		assignQRCodeDiv("display");
 		selectChange();
-    </script>
+	</script>
 </body>
 </html>
