@@ -61,8 +61,11 @@ La méthode createQRCode() est à lier au bouton permettant de crééer le code 
 #### Classes
 
 La classe _.test_ est à utiliser avec les données simples (un champ).
+
 La classe _.autre_ est à utiliser avec les données nécessitant deux champs.
+
 La classe _.ct_ est à utiliser avec les données nécessitant trois champs.
+
 A vous de faire les autres pour plus de champs !
 
 
