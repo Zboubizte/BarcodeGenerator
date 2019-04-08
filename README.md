@@ -15,7 +15,9 @@ Le container web a été créée en HTML. Et L'implémentation de la librairie Q
 
 ### Interface
 
-L'interface web comportera deux entrées:
+L'interface web comportera trois entrées:
+
+    - La taille du Qrcode(100*100 200*200 300*300 500*500 1000*1000)
 
     - Le type(Adresse, texte, numéro, mot de passe, sms, etc)
     
