@@ -16,8 +16,11 @@ Le container web a été créée en HTML. Et L'implémentation de la librairie Q
 ### Interface
 
 L'interface web comportera deux entrées:
+
     - Le type(Adresse, texte, numéro, mot de passe, sms, etc)
+    
     - Le message qui sera transposé en Qrcode
+    
 La sortie correspondra à une image Qrcode correspondant aux deux entrées.
 Le tout est englobé dans un container html pour la modularité.
    
